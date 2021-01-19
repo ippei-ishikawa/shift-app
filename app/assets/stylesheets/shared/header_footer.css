@@ -15,6 +15,16 @@ body{
   text-align  : center;
   font-weight : bold;
 }
+
+.header.log-out-{
+  height: 40px;
+  width: 50px;
+  font-size   : 14px;
+}
+
+.log-out-btn{
+  color: #efa645;
+}
 /* === フッター ============================================= */
 .footer{
   position    : fixed;
@@ -28,17 +38,18 @@ body{
   font-weight : bold;
 }
 /* === 文字（大） =========================================== */
-.hdStrBig{
+.header-title, .footer-title{
   font-size   : 30px;
   line-height : 70px;
   color       : #fff;
 }
  
 /* === 文字（小） =========================================== */
-.hdStrSmall{
+.header-menu, .footer-menu{
   font-size   : 14px;
   line-height : 30px;
   color       : #fff;
+  margin: 0 20px;
 }
 /* === ヘッダー、フッターの移動ボタン ======================= */
 .hdBtnStyle{

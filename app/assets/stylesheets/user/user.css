@@ -1,10 +1,11 @@
 .account-page .account-page__inner {
-  width: 980px;
-  margin: 60px auto;
-  padding: 60px;
+  width: 100%;
+  height: calc(100% - 100px - 100px);
+  margin: 0px auto;
+  padding: 100px;
   background-color: #fff;
+  /* background: linear-gradient(#fff, #ccc); */
   border-radius: 5px;
-  
 }
 .account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
   /* float: left; */
@@ -70,7 +71,7 @@
   float: left;
   margin-top: 20px;
   color: #fff;
-  background-color: #38aef0;
+  background-color: #5567df;
 }
 .account-page .field-label .field_with_errors {
   display: inline-block;

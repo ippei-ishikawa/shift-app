@@ -5,4 +5,12 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :shifts
+
+  with_options presence: true do
+    validates :family_name, format: { with: /\A[ぁ-んァ-ヶ一-龥々]+\z/ } 
+    validates :given_name, format: { with: /\A[ぁ-んァ-ヶ一-龥々]+\z/ } 
+    validates :number, numericality: { only_integer: true} , length: { is: 6 }
+    validates :email, uniqueness: true
+    validates :password, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i }
+  end  
 end

@@ -1,3 +1,17 @@
+.main {
+  height: 80vh;
+  width: 100vw;
+  background-color: hsl(0, 0%, 40%);
+  display: flex;
+}
+
+.main-list{
+  height: 30px;
+  width: 50px;
+  background-color: #ffffff;
+  border: 1px solid red;
+}
+
 .user-registration {
   width: 100px;
 }

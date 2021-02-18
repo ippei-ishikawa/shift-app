@@ -16,15 +16,6 @@ body{
   font-weight : bold;
 }
 
-.header.log-out-{
-  height: 40px;
-  width: 50px;
-  font-size   : 14px;
-}
-
-.log-out-btn{
-  color: #efa645;
-}
 /* === フッター ============================================= */
 .footer{
   position    : fixed;
@@ -52,7 +43,7 @@ body{
   margin: 0 20px;
 }
 /* === ヘッダー、フッターの移動ボタン ======================= */
-.hdBtnStyle{
+.hd-btn-style, .ft-btn-style{
   display     : inline-block;
   position    : absolute;
   right       : 10px;
@@ -65,14 +56,14 @@ body{
   border-radius: 3px;
   
 }
-#hdBtnArea{
+#hd-btn-area{
   bottom      : 5px;        /* ヘッダーはボタンを下寄せにする */
 }
-#ftBtnArea{
+#ft-btn-area{
   top         : 5px;        /* フッターはボタンを上寄せにする */
 }
  
 /* === ヘッダー、フッターの移動ボタンにフォーカスされた時 === */
-.hdBtnStyle:hover{
+.hd-btn-style:hover, .ft-btn-style:hover{
   background  : #fff;
 }

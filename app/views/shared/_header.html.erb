@@ -1,11 +1,12 @@
 <div id="header-area" class="header">
   <div class="header-title">Shift App</div>
-    <% if user_signed_in?%>
-    <%= link_to 'シフト作成', "#", class: "new-shift header-menu" %>
-    <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "sign-out header-menu" %>
+    <% if user_signed_in? %>
+      <%= link_to '一覧', shifts_path, method: :get, class: "index-menu" %>
+      <%= link_to 'シフト作成', new_shift_path,  method: :get, class: "new-shift header-menu" %>
+      <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "sign-out header-menu" %>  
     <% else %>
-    <%= link_to '新規登録', new_user_registration_path, class: "sign-up header-menu" %>
-    <%= link_to 'ログイン', new_user_session_path, class: "sign-in header-menu" %>
+      <%= link_to '新規登録', new_user_registration_path, class: "sign-up header-menu" %>
+      <%= link_to 'ログイン', new_user_session_path, class: "sign-in header-menu" %>
     <% end %>
-  <div id="hdBtnArea" class="hdBtnStyle" onclick="goScroll('H')">▲</div>
+  <div id="hd-btn-area" class="hd-btn-style" onclick="goScroll('H')">▲</div>
 </div>

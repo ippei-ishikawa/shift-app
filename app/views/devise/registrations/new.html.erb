@@ -5,7 +5,7 @@
     <div class='account-page__inner--left account-page__header'>
       <h2>新規ユーザー登録</h2>
       <h5>必要事項を入力してください</h5>
-      <%= render "devise/shared/links"%>
+      <%# render "devise/shared/links"%>
     </div>
     <div class='account-page__inner--right user-form'>
       <%= form_with model: resource, as: resource_name, url: registration_path(resource_name), local: true do |f|%>
@@ -62,8 +62,8 @@
         <div class='actions'>
           <%= f.submit "登録", class: 'btn'%>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
 

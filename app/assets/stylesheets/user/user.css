@@ -4,11 +4,10 @@
   margin: 0px auto;
   padding: 100px;
   background-color: #fff;
-  /* background: linear-gradient(#fff, #ccc); */
+  background: linear-gradient(#fff, #ccc);
   border-radius: 5px;
 }
 .account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
-  /* float: left; */
   width: 50%;
 }
 .account-page .account-page__inner:after {
@@ -27,7 +26,6 @@
   display: block;
   width: 60px;
   margin-top: 5px;
-  border-bottom: 1px solid #38aef0;
 }
 .account-page .account-page__header h5 {
   margin-bottom: 20px;
@@ -53,7 +51,7 @@
   font-size: 11px;
 }
 .account-page .field .field-input input {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   letter-spacing: 1px;
 }
@@ -112,4 +110,8 @@
   margin: 0;
   padding: 0;
   font-size: 13px;
+}
+
+.user-registration {
+  width: 100px;
 }
